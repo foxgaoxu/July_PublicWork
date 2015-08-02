@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/bt_savelogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/bt_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入电话号码"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/bt_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拨打电话" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入信息容"
+            android:maxLines="10"
+            android:minLines="5" />
+
+        <Button
+            android:id="@+id/bt_sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="发送短信" />
+    </LinearLayout>
+
+</LinearLayout>
